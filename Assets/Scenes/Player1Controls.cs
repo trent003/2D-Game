@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         //gets objects RigidBody2d
+
         rb = GetComponent<Rigidbody2D>();
     }
 
