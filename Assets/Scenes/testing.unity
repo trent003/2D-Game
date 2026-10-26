@@ -156,8 +156,6 @@ MonoBehaviour:
   jumpKey: 63
   moveSpeed: 6
   jumpSpeed: 12
-  groundCheck: {fileID: 317827860}
-  groundCheckRadius: 0.15
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -187,7 +185,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &270911422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -304,7 +302,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 317827860}
@@ -510,7 +508,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1168973002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -627,7 +625,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1087565465}
@@ -650,8 +648,6 @@ MonoBehaviour:
   jumpKey: 37
   moveSpeed: 6
   jumpSpeed: 12
-  groundCheck: {fileID: 1087565465}
-  groundCheckRadius: 0.15
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -706,6 +702,67 @@ PrefabInstance:
     - target: {fileID: 1569250527081666702, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
       propertyPath: m_Name
       value: wall
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+--- !u!1001 &2121998796
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400842998002829947, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569250527081666702, guid: 894ab210eb735674f91a71aecfdca2f3, type: 3}
+      propertyPath: m_Name
+      value: floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -778,3 +835,4 @@ SceneRoots:
   - {fileID: 1168973004}
   - {fileID: 2087733951}
   - {fileID: 270911424}
+  - {fileID: 2121998796}
