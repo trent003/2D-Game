@@ -46,12 +46,10 @@ public class PlayerController : MonoBehaviour
         {
             currMoveInput -= 1f;
         }
-        
         if (kb[rightKey].isPressed) //moving right
         {
             currMoveInput += 1f;
         }
-        
         if (kb[jumpKey].wasPressedThisFrame) //jump
         {
             jumpKeyPressed = true;
