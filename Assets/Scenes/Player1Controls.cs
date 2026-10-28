@@ -18,9 +18,14 @@ public class PlayerController : MonoBehaviour
 
 
     Rigidbody2D rb;
-    
+
     float currMoveInput;
     bool jumpKeyPressed;
+
+
+    //for checking if player is on ground
+    bool isGrounded;
+
 
     void Awake()
     {
@@ -33,44 +38,72 @@ public class PlayerController : MonoBehaviour
     {
         //connects to keyboard
         var kb = Keyboard.current;
-        
-        if (kb == null) //stops if no keyboard
+
+        //stops if no keyboard
+        if (kb == null)
         {
             return;
         }
 
         //resets input each frame & check what is keyboard input each frame for movement
         currMoveInput = 0f;
-        
-        if (kb[leftKey].isPressed) //moving left
+
+        //moving left
+        if (kb[leftKey].isPressed)
         {
             currMoveInput -= 1f;
         }
-        if (kb[rightKey].isPressed) //moving right
+
+        //moving right
+        if (kb[rightKey].isPressed)
         {
             currMoveInput += 1f;
         }
-        if (kb[jumpKey].wasPressedThisFrame) //jump
+
+        //jump
+        if (kb[jumpKey].wasPressedThisFrame)
         {
             jumpKeyPressed = true;
         }
+
     }
+
+
 
     void FixedUpdate()
     {
-        //checking if player is on ground
-        bool isGrounded = rb.IsTouchingLayers(groundLayer);
-
-
         rb.linearVelocity = new Vector2(currMoveInput * moveSpeed, rb.linearVelocity.y);
 
-        if (jumpKeyPressed && isGrounded) //jumping only if player on ground and pressed jump key
+        //jumping only if player on ground and pressed jump key
+        if (jumpKeyPressed && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
         }
 
+        //resetting
         jumpKeyPressed = false;
+        isGrounded = false;
     }
+    void OnCollisionStay2D(Collision2D col)
+    {
 
+        //seeing if player is on ground object
+        if (col.gameObject.layer != LayerMask.NameToLayer("Ground"))
+        {
+            return;
+        }
 
+        // checking each point when player touches ground object
+        foreach (ContactPoint2D contact in col.contacts)
+        {
+            //if close to 1 then on floor
+            // if close to 0 then a wall so doesnt allow jump
+            if (contact.normal.y > 0.5f)
+            {
+                isGrounded = true;
+                return;
+            }
+        }
+
+    }
 }
