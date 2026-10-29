@@ -13,11 +13,10 @@ public class Pickup : MonoBehaviour
         {
             return;
         }
-        if (requiredElement != "" && !player.CompareTag(requiredElement))
+        if (!player.CompareTag(requiredElement))
         {
             return;
         }
-
 
         //after pick up key opens door and removes key object
         door.Open();
