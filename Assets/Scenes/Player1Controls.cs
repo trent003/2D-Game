@@ -26,12 +26,21 @@ public class PlayerController : MonoBehaviour
     //for checking if player is on ground
     bool isGrounded;
 
+    //JUMP SOUND EFFECT
+    public AudioClip jumpSoundEffect;
+    public AudioSource audioSource;
+
+
 
     void Awake()
     {
         //gets objects RigidBody2d
 
         rb = GetComponent<Rigidbody2D>();
+
+        //getting jump SE
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -78,6 +87,9 @@ public class PlayerController : MonoBehaviour
         if (jumpKeyPressed && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
+            //adding jump sound
+            audioSource.PlayOneShot(jumpSoundEffect);
+
         }
 
         //resetting
@@ -106,4 +118,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+
 }

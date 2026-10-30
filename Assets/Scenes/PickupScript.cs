@@ -4,10 +4,18 @@ public class Pickup : MonoBehaviour
 {
     public DoorScript door;
     //determine which player(fire/water) can go through
-    public string requiredElement = "";   
+    public string requiredElement = "";
+
+
+    //adding pickip sound
+    AudioSource audioSource;
+    public AudioClip keyPickupSound;
+
+
 
     void OnTriggerEnter2D(Collider2D player)
     {
+        //making sure that correct player picks up correct key element
         bool isPlayer = player.CompareTag("Fire") || player.CompareTag("Water");
         if (!isPlayer)
         {
@@ -18,8 +26,15 @@ public class Pickup : MonoBehaviour
             return;
         }
 
+        //playing sound on key pickup
+        audioSource.PlayOneShot(keyPickupSound);
         //after pick up key opens door and removes key object
         door.Open();
-        Destroy(gameObject);  
+        Destroy(gameObject, .25f);  
+    }
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
     }
 }
