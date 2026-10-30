@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class PlayerController : MonoBehaviour
+public class PlayerControls : MonoBehaviour
 {
     //controls
     public Key leftKey = Key.A;

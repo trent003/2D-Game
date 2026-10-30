@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using UnityEngine.InputSystem;
+
 public class LevelScript : MonoBehaviour
 {
     public static LevelScript LevelInstance;
@@ -13,6 +15,8 @@ public class LevelScript : MonoBehaviour
     AudioSource audioSource;
     public AudioClip levelCompleteSound;
     bool islevelComplete;
+
+   
 
     void Awake()
     {
@@ -45,5 +49,20 @@ public class LevelScript : MonoBehaviour
     {
         SceneManager.LoadScene("LevelSelect");
 
+    }
+
+    
+    void Update()
+    {
+        //for allowing players to use esc to go to menu
+        var keyInput = Keyboard.current;
+        if(keyInput == null)
+        {
+            return;
+        }
+        if (keyInput.escapeKey.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }
