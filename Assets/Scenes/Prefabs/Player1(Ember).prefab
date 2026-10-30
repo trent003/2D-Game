@@ -61,8 +61,8 @@ Transform:
   m_GameObject: {fileID: 9114028828187023596}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalPosition: {x: -1.8, y: -3.53, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6626019744392465104}
@@ -162,7 +162,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -172,7 +172,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4, y: 0.7}
   m_EdgeRadius: 0
 --- !u!50 &3213368337687186750
 Rigidbody2D:
@@ -189,7 +189,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -216,8 +216,8 @@ MonoBehaviour:
   leftKey: 15
   rightKey: 18
   jumpKey: 37
-  moveSpeed: 6
-  jumpSpeed: 12
+  moveSpeed: 7
+  jumpSpeed: 10.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -236,7 +236,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

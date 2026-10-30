@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 34936902}
   - component: {fileID: 34936901}
   m_Layer: 0
-  m_Name: Text (TMP) (7)
+  m_Name: controlsText10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,6 +313,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1516955294}
     m_Modifications:
+    - target: {fileID: 1564260026425646140, guid: 75ff42211e1dd6d44b52174ffb31abf1, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 2837076917119795886, guid: 75ff42211e1dd6d44b52174ffb31abf1, type: 3}
       propertyPath: m_Size.x
       value: 15
@@ -527,7 +531,7 @@ GameObject:
   - component: {fileID: 114386769}
   - component: {fileID: 114386768}
   m_Layer: 0
-  m_Name: Text (TMP) (2)
+  m_Name: controlsText3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6418843602960363604, guid: 35c511d2b3b9ec24894761683f341750, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6418843602960363604, guid: 35c511d2b3b9ec24894761683f341750, type: 3}
       propertyPath: m_LocalPosition.z
@@ -775,7 +779,7 @@ GameObject:
   - component: {fileID: 329867873}
   - component: {fileID: 329867872}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: controlsText6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -952,6 +956,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 44005148474311576, guid: a37848de8642fb244a7466c39078268c, type: 3}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 86779543692160170, guid: a37848de8642fb244a7466c39078268c, type: 3}
       propertyPath: ember
       value: 
@@ -966,11 +974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2004057403040540437, guid: a37848de8642fb244a7466c39078268c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11693
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2004057403040540437, guid: a37848de8642fb244a7466c39078268c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.89402
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2004057403040540437, guid: a37848de8642fb244a7466c39078268c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4118,7 +4126,7 @@ GameObject:
   - component: {fileID: 703368908}
   - component: {fileID: 703368907}
   m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Name: controlsText2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4299,7 +4307,7 @@ GameObject:
   - component: {fileID: 783769449}
   - component: {fileID: 783769448}
   m_Layer: 0
-  m_Name: Text (TMP) (6)
+  m_Name: controlsText9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4325,7 +4333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: All avoid Acid
+  m_text: Avoid Acid
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4480,7 +4488,7 @@ GameObject:
   - component: {fileID: 794570979}
   - component: {fileID: 794570978}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: controlsText1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4727,7 +4735,7 @@ GameObject:
   - component: {fileID: 990125187}
   - component: {fileID: 990125186}
   m_Layer: 0
-  m_Name: Text (TMP) (3)
+  m_Name: controlsText8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5080,6 +5088,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9010675343179275275, guid: b83224c610aad5940859492ceef1bda9, type: 3}
+      propertyPath: m_Volume
+      value: 0.056
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5301,14 +5313,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1499621085641465262, guid: f2aa7414e707baa4ea5d84de46b2969e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499621085641465262, guid: f2aa7414e707baa4ea5d84de46b2969e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499621085641465262, guid: f2aa7414e707baa4ea5d84de46b2969e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.72
       objectReference: {fileID: 0}
@@ -5347,14 +5351,6 @@ PrefabInstance:
     - target: {fileID: 1499621085641465262, guid: f2aa7414e707baa4ea5d84de46b2969e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261002353236819242, guid: f2aa7414e707baa4ea5d84de46b2969e, type: 3}
-      propertyPath: jumpSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261002353236819242, guid: f2aa7414e707baa4ea5d84de46b2969e, type: 3}
-      propertyPath: moveSpeed
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4101219442994004701, guid: f2aa7414e707baa4ea5d84de46b2969e, type: 3}
       propertyPath: m_Name
@@ -5551,7 +5547,7 @@ GameObject:
   - component: {fileID: 1667239591}
   - component: {fileID: 1667239590}
   m_Layer: 0
-  m_Name: Text (TMP) (5)
+  m_Name: controlsText5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5733,13 +5729,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4443184843495415374, guid: 504797f317b6d9b49bc4a7f91c0bb91d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4443184843495415374, guid: 504797f317b6d9b49bc4a7f91c0bb91d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
+    - target: {fileID: 3213368337687186750, guid: 504797f317b6d9b49bc4a7f91c0bb91d, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4443184843495415374, guid: 504797f317b6d9b49bc4a7f91c0bb91d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5783,11 +5775,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8035584565620015247, guid: 504797f317b6d9b49bc4a7f91c0bb91d, type: 3}
       propertyPath: jumpSpeed
-      value: 15
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 8035584565620015247, guid: 504797f317b6d9b49bc4a7f91c0bb91d, type: 3}
       propertyPath: moveSpeed
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9114028828187023596, guid: 504797f317b6d9b49bc4a7f91c0bb91d, type: 3}
       propertyPath: m_Name
@@ -10462,7 +10454,7 @@ GameObject:
   - component: {fileID: 1854334619}
   - component: {fileID: 1854334618}
   m_Layer: 0
-  m_Name: Text (TMP) (4)
+  m_Name: controlsText4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10488,7 +10480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ALL avoid Acid
+  m_text: Avoid Acid
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10916,6 +10908,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7263648198369508559, guid: e9bf964843b1b8d4f9f4f2da27bb7537, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 8399120444419492186, guid: e9bf964843b1b8d4f9f4f2da27bb7537, type: 3}
       propertyPath: m_Name
       value: AcidHazard
@@ -11007,7 +11003,7 @@ GameObject:
   - component: {fileID: 2146328470}
   - component: {fileID: 2146328469}
   m_Layer: 0
-  m_Name: Text (TMP) (8)
+  m_Name: controlsText7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11195,15 +11191,15 @@ SceneRoots:
   - {fileID: 441292335}
   - {fileID: 391652533}
   - {fileID: 439098141}
-  - {fileID: 34936900}
-  - {fileID: 2146328468}
   - {fileID: 1253768713}
   - {fileID: 1944187663}
   - {fileID: 794570980}
-  - {fileID: 990125188}
+  - {fileID: 703368909}
+  - {fileID: 114386770}
   - {fileID: 1854334620}
   - {fileID: 1667239592}
-  - {fileID: 783769450}
-  - {fileID: 114386770}
-  - {fileID: 703368909}
   - {fileID: 329867874}
+  - {fileID: 2146328468}
+  - {fileID: 990125188}
+  - {fileID: 783769450}
+  - {fileID: 34936900}

@@ -13,7 +13,7 @@ public class LevelHazards : MonoBehaviour
     bool isPLayerDying;
 
 
-    //getting the dying SE on awake
+    //getting the dying sound effect on awake
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
